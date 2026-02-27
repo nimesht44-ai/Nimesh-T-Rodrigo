@@ -1,0 +1,123 @@
+Act as a professional web copywriter and personal branding strategist.
+
+I am building a DARK THEME modern portfolio website using this Framer template:
+https://stellar-frictionless-202212.framer.app/
+
+Generate COMPLETE website content customized for me.
+
+Target audience:
+1) Companies hiring for IT / Web / Project roles
+2) Clients looking to hire freelance web design, branding, or digital services
+
+Tone:
+- Modern
+- Confident
+- Professional
+- Tech-focused
+- Clean and powerful
+- Suitable for dark UI design
+
+My Details:
+
+Name: Nimesh T
+Location: Singapore
+Title: IT & Web Developer | Wix & Framer Designer | Graphic Designer | Project Coordinator
+
+Education:
+Advanced Diploma in Information Technology (Project Management)
+
+Experience:
+- 4+ years Graphic Design
+- Wix Studio Website Developer
+- Framer Website Designer
+- Built dynamic database websites
+- Created project documentation, budgets & system proposals
+- Owner of ElectroMart (Electronics Retail Business)
+- Social Media Management experience
+- IT project planning & cybersecurity awareness documentation
+
+Technical Skills:
+- HTML, CSS, JavaScript
+- Java (basic-intermediate)
+- MySQL & ER diagrams
+- Wix Studio
+- Framer
+- Branding & Visual Identity
+- Social Media Strategy
+- Project Management
+- IT Documentation
+
+Soft Skills:
+- Leadership
+- Communication
+- Problem Solving
+- Time Management
+- Strategic Thinking
+
+Now generate:
+
+1️⃣ HERO SECTION
+- Strong headline (5 variations)
+- Short powerful subheading
+- CTA buttons:
+   - "Hire Me"
+   - "View My Work"
+   - "Download Resume"
+   - "Let's Work Together"
+
+2️⃣ ABOUT ME SECTION
+- Short version (3–4 lines)
+- Medium version
+- Long professional bio
+
+3️⃣ SERVICES SECTION
+Create structured service cards for:
+- Web Design & Development
+- Graphic Design & Branding
+- Project Management & IT Documentation
+- Social Media & Digital Strategy
+
+Each service should include:
+- Title
+- 2-3 sentence description
+- Bullet points
+- CTA line
+
+4️⃣ EXPERIENCE SECTION
+Write professional experience summaries with achievement-focused language.
+
+5️⃣ SKILLS SECTION
+Organize into:
+- Technical Skills
+- Creative Skills
+- Business & Management Skills
+
+6️⃣ PORTFOLIO SECTION INTRO TEXT
+Short compelling intro encouraging users to view projects.
+
+7️⃣ HIRE ME SECTION
+Write persuasive copy targeting:
+- Startups
+- Small businesses
+- Companies hiring IT roles
+
+8️⃣ JOB OPPORTUNITIES SECTION
+Write content targeting recruiters and HR managers explaining why I am a strong candidate.
+
+9️⃣ CONTACT SECTION
+Professional call-to-action encouraging email or LinkedIn contact.
+
+🔟 SEO
+Provide:
+- Homepage meta title
+- Meta description
+- Keywords list
+
+Make everything optimized for:
+- ATS readability
+- Professional branding
+- Dark modern UI
+- Clean typography layout
+- High conversion
+
+Do not use generic wording. Make it strong, confident, and modern.
