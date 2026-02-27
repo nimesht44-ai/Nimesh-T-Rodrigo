@@ -92,12 +92,6 @@ export default function Home() {
                 </div>
                 +65 8408 6110
               </a>
-              <a href="https://linkedin.com/in/tyrone-brooks" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-sm text-gray-300 hover:text-primary transition-colors group">
-                <div className="p-2 rounded-lg bg-white/5 border border-white/10 group-hover:border-primary/50 transition-colors">
-                  <Linkedin className="w-4 h-4 text-primary" />
-                </div>
-                linkedin.com/in/tyrone-brooks
-              </a>
               <div className="flex items-center gap-3 text-sm text-gray-300 group">
                 <div className="p-2 rounded-lg bg-white/5 border border-white/10">
                   <MapPin className="w-4 h-4 text-primary" />
@@ -218,10 +212,14 @@ export default function Home() {
               </h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4">
                 {[
-                  "User Research", "Interaction Design", 
-                  "Usability Testing", "Design Systems", 
-                  "Wireframing / Prototyping", "Responsive Web Design", 
-                  "Visual Design", "Site Architecture"
+                  "HTML, CSS, JavaScript",
+                  "Java (Basic to Intermediate)",
+                  "MySQL & Database Design",
+                  "Wix Studio",
+                  "Framer",
+                  "Visual Studio Code",
+                  "Figma",
+                  "IT Documentation & Reporting"
                 ].map((skill, i) => (
                   <motion.div 
                     key={skill}
