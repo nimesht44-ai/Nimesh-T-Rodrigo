@@ -95,10 +95,14 @@ export default function Home() {
             </div>
 
             <div className="flex flex-wrap items-center gap-6">
-              <button className="group px-8 py-4 rounded-xl font-semibold bg-gradient-to-r from-primary to-[#ff9900] text-primary-foreground shadow-[0_0_20px_rgba(255,184,0,0.3)] hover:shadow-[0_0_30px_rgba(255,184,0,0.5)] hover:-translate-y-1 transition-all duration-300 flex items-center gap-3">
+              <a 
+                href="/cv.pdf" 
+                download="Nimesh_Theekshana_CV.pdf"
+                className="group px-8 py-4 rounded-xl font-semibold bg-gradient-to-r from-primary to-[#ff9900] text-primary-foreground shadow-[0_0_20px_rgba(255,184,0,0.3)] hover:shadow-[0_0_30px_rgba(255,184,0,0.5)] hover:-translate-y-1 transition-all duration-300 flex items-center gap-3"
+              >
                 <Download className="w-5 h-5 group-hover:animate-bounce" />
                 Download CV
-              </button>
+              </a>
               <div className="flex items-center gap-3">
                 <a href="https://www.facebook.com/profile.php?id=100087275272510" target="_blank" rel="noopener noreferrer" className="p-3 rounded-xl bg-white/5 border border-white/10 hover:border-primary/50 hover:text-primary text-gray-300 transition-all hover:-translate-y-1">
                   <Facebook className="w-5 h-5" />
