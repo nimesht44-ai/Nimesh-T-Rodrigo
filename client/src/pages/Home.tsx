@@ -2,8 +2,8 @@ import { useEffect } from "react";
 import { motion } from "framer-motion";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { Mail, Phone, MapPin, Download, Send, Linkedin, User, Briefcase, Code2, Wand2, Facebook, Instagram, Twitter, Github, Video, Sparkles, Bot, Monitor, Server } from "lucide-react";
-import { SiWix, SiFramer, SiFigma, SiCanva, SiAdobeillustrator, SiAdobephotoshop, SiPython, SiReplit, SiVisualstudiocode, SiGoogle } from "react-icons/si";
+import { Mail, Phone, MapPin, Download, Send, User, Briefcase, Code2, Wand2, Facebook, Instagram, Twitter, Github, Video, Sparkles, Bot, Monitor, Server } from "lucide-react";
+import { SiWix, SiFramer, SiFigma, SiCanva, SiAdobeillustrator, SiAdobephotoshop, SiPython, SiReplit, SiGoogle } from "react-icons/si";
 
 import { insertMessageSchema } from "@shared/schema";
 import { useCreateMessage } from "@/hooks/use-messages";
@@ -295,7 +295,7 @@ export default function Home() {
                   { icon: SiPython, name: "Python" },
                   { icon: Bot, name: "ChatGPT" },
                   { icon: SiGoogle, name: "Google Tools" },
-                  { icon: SiVisualstudiocode, name: "VS Code" },
+                  { icon: Code2, name: "VS Code" },
                   { icon: Monitor, name: "Virtual Machine" },
                   { icon: Server, name: "Virtual Box" },
                 ].map((tool, i) => (
