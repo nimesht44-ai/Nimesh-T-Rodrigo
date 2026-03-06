@@ -24,11 +24,13 @@ export function BottomNav({ activeSection }: BottomNavProps) {
   };
 
   return (
-    <motion.div 
+    <motion.div
       initial={{ y: 100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.8, delay: 0.5, ease: "easeOut" }}
-      className="fixed bottom-10 left-1/2 -translate-x-1/2 z-50 px-4 flex justify-center w-max"
+      // We remove left-1/2 and -translate-x-1/2
+      // We use left-0 right-0 to span the full width
+      className="fixed bottom-10 left-0 right-0 z-50 px-4 flex justify-center items-center pointer-events-none"
     >
       <nav className="glass-pill rounded-full p-3 flex flex-row items-center justify-center gap-4 sm:gap-6 relative overflow-hidden whitespace-nowrap shadow-[0_20px_50px_rgba(0,0,0,0.5)]">
         {navItems.map((item) => {
@@ -40,8 +42,10 @@ export function BottomNav({ activeSection }: BottomNavProps) {
               className={twMerge(
                 clsx(
                   "relative z-10 flex flex-col items-center justify-center w-14 h-14 rounded-full transition-colors duration-300 group",
-                  isActive ? "text-primary-foreground" : "text-muted-foreground hover:text-foreground"
-                )
+                  isActive
+                    ? "text-primary-foreground"
+                    : "text-muted-foreground hover:text-foreground",
+                ),
               )}
             >
               {isActive && (
@@ -51,7 +55,12 @@ export function BottomNav({ activeSection }: BottomNavProps) {
                   transition={{ type: "spring", stiffness: 300, damping: 30 }}
                 />
               )}
-              <item.icon className={clsx("w-5 h-5 mb-1 transition-transform duration-300", isActive && "scale-110")} />
+              <item.icon
+                className={clsx(
+                  "w-5 h-5 mb-1 transition-transform duration-300",
+                  isActive && "scale-110",
+                )}
+              />
               <span className="text-[10px] font-medium tracking-wide opacity-0 group-hover:opacity-100 transition-opacity absolute bottom-1.5 translate-y-3 group-hover:translate-y-0">
                 {!isActive && item.label}
               </span>
