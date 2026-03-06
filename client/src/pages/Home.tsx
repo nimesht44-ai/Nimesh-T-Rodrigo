@@ -101,7 +101,7 @@ export default function Home() {
             <div className="flex flex-wrap items-center gap-6">
               <a 
                 href="/cv.pdf" 
-                download="cv.pdf"
+                download="NIMESH_T_RODRIGO_CV.pdf"
                 className="group px-8 py-4 rounded-xl font-semibold bg-gradient-to-r from-primary to-[#ff9900] text-primary-foreground shadow-[0_0_20px_rgba(255,184,0,0.3)] hover:shadow-[0_0_30px_rgba(255,184,0,0.5)] hover:-translate-y-1 transition-all duration-300 flex items-center gap-3"
               >
                 <Download className="w-5 h-5 group-hover:animate-bounce" />
