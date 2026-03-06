@@ -86,7 +86,11 @@ export default function Home() {
               </a>
               <a href="tel:+6584086110" className="flex items-center gap-3 text-sm text-gray-300 hover:text-primary transition-colors group bg-white/5 px-4 py-2 rounded-full border border-white/10">
                 <Phone className="w-4 h-4 text-primary" />
-                +65 8408 6110
+                +65 8408 6110 (SG)
+              </a>
+              <a href="tel:+94740059884" className="flex items-center gap-3 text-sm text-gray-300 hover:text-primary transition-colors group bg-white/5 px-4 py-2 rounded-full border border-white/10">
+                <Phone className="w-4 h-4 text-primary" />
+                +94 74 005 9884 (SL)
               </a>
               <div className="flex items-center gap-3 text-sm text-gray-300 group bg-white/5 px-4 py-2 rounded-full border border-white/10">
                 <MapPin className="w-4 h-4 text-primary" />
@@ -343,26 +347,35 @@ export default function Home() {
                 subtitle="Looking to establish a premium online presence or build your next big idea? Drop a message." 
               />
               
-              <div className="space-y-6 mt-10">
-                <div className="flex items-center gap-4 text-gray-300">
-                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
-                    <Mail />
+                <div className="space-y-6 mt-10">
+                  <div className="flex items-center gap-4 text-gray-300">
+                    <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+                      <Mail />
+                    </div>
+                    <div>
+                      <p className="text-sm text-gray-500">Email me at</p>
+                      <a href="mailto:theekshanann322@gmail.com" className="font-medium hover:text-primary transition-colors">theekshanann322@gmail.com</a>
+                    </div>
                   </div>
-                  <div>
-                    <p className="text-sm text-gray-500">Email me at</p>
-                    <a href="mailto:theekshanann322@gmail.com" className="font-medium hover:text-primary transition-colors">theekshanann322@gmail.com</a>
+                  <div className="flex items-center gap-4 text-gray-300">
+                    <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+                      <Phone />
+                    </div>
+                    <div>
+                      <p className="text-sm text-gray-500">Call me at (SG)</p>
+                      <a href="tel:+6584086110" className="font-medium hover:text-primary transition-colors">+65 8408 6110</a>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-4 text-gray-300">
+                    <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+                      <Phone />
+                    </div>
+                    <div>
+                      <p className="text-sm text-gray-500">Call me at (SL)</p>
+                      <a href="tel:+94740059884" className="font-medium hover:text-primary transition-colors">+94 74 005 9884</a>
+                    </div>
                   </div>
                 </div>
-                <div className="flex items-center gap-4 text-gray-300">
-                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
-                    <Phone />
-                  </div>
-                  <div>
-                    <p className="text-sm text-gray-500">Call me at</p>
-                    <a href="tel:+6584086110" className="font-medium hover:text-primary transition-colors">+65 8408 6110</a>
-                  </div>
-                </div>
-              </div>
             </div>
 
             <motion.div 
