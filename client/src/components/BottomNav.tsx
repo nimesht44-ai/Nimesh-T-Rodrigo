@@ -28,9 +28,9 @@ export function BottomNav({ activeSection }: BottomNavProps) {
       initial={{ y: 100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.8, delay: 0.5, ease: "easeOut" }}
-      className="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 px-4 flex justify-center w-full max-w-md md:w-max"
+      className="fixed bottom-10 left-1/2 -translate-x-1/2 z-50 px-4 flex justify-center w-max"
     >
-      <nav className="glass-pill rounded-full p-2 flex flex-row items-center justify-center gap-2 sm:gap-6 relative overflow-hidden whitespace-nowrap w-full md:w-auto">
+      <nav className="glass-pill rounded-full p-3 flex flex-row items-center justify-center gap-4 sm:gap-6 relative overflow-hidden whitespace-nowrap shadow-[0_20px_50px_rgba(0,0,0,0.5)]">
         {navItems.map((item) => {
           const isActive = activeSection === item.id;
           return (

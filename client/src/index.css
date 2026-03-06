@@ -59,7 +59,7 @@
 
 @layer utilities {
   .glass-pill {
-    @apply bg-card/60 backdrop-blur-xl border border-white/10 shadow-lg shadow-black/50;
+    @apply bg-black/40 backdrop-blur-2xl border border-white/10 shadow-2xl;
   }
   
   .glass-card {
