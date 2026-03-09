@@ -3,9 +3,9 @@ import { createServer, type Server } from "http";
 import { storage } from "./storage";
 import { api } from "@shared/routes";
 import { z } from "zod";
-import { Resend } from 'resend'; // 1. Import Resend
+import { Resend } from 'resend'; // 1. Added Resend import
 
-// 2. Initialize with your API key
+// 2. Initialized with your API key
 const resend = new Resend('re_NPCuSRUs_AVoD82W9VHHkyyzpA4LxRxXp');
 
 export async function registerRoutes(
@@ -15,19 +15,19 @@ export async function registerRoutes(
   
   app.post(api.messages.create.path, async (req, res) => {
     try {
-      // Validate the form input (name, email, message)
+      // Validate input (Name, Email, Message)
       const input = api.messages.create.input.parse(req.body);
       
-      // Save the message to your database
+      // Save to Database
       const message = await storage.createMessage(input);
 
-      // 3. Send the email notification to yourself
+      // 3. Send email to your Gmail
       await resend.emails.send({
         from: 'onboarding@resend.dev',
         to: 'theekshanann322@gmail.com',
-        subject: `New Portfolio Message from ${input.name}`,
+        subject: `Portfolio Inquiry from ${input.name}`,
         html: `
-          <h3>You have a new message from your website!</h3>
+          <h3>New Message Received</h3>
           <p><strong>Name:</strong> ${input.name}</p>
           <p><strong>Email:</strong> ${input.email}</p>
           <p><strong>Message:</strong></p>
