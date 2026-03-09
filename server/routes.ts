@@ -3,32 +3,39 @@ import { createServer, type Server } from "http";
 import { storage } from "./storage";
 import { api } from "@shared/routes";
 import { z } from "zod";
-import { Resend } from "resend"; // 1. Add this line at the very top
-
-// 2. Initialize the mail service
-const resend = new Resend(process.env.RESEND_API_KEY);
+import nodemailer from "nodemailer";
 
 export async function registerRoutes(
   httpServer: Server,
   app: Express
 ): Promise<Server> {
   
+  // 1. Setup the Email Transporter (using Gmail)
+  const transporter = nodemailer.createTransport({
+    service: 'gmail',
+    auth: {
+      user: process.env.EMAIL_USER, // Your Gmail
+      pass: process.env.EMAIL_PASS  // Your App Password
+    }
+  });
+
   app.post(api.messages.create.path, async (req, res) => {
     try {
+      // Validate input
       const input = api.messages.create.input.parse(req.body);
       
-      // Save to your database first
+      // Save message to database
       const message = await storage.createMessage(input);
 
-      // 3. This block sends the email to your Gmail
-      if (process.env.RESEND_API_KEY) {
-        await resend.emails.send({
-          from: 'Portfolio <onboarding@resend.dev>',
-          to: 'theekshanann322@gmail.com',
-          subject: `Portfolio Message from ${input.name}`,
-          text: `Name: ${input.name}\nEmail: ${input.email}\n\nMessage:\n${input.message}`,
-        });
-      }
+      // 2. Send the Email Notification to you
+      const mailOptions = {
+        from: input.email,
+        to: 'theekshanann322@gmail.com', // Your Gmail
+        subject: `New Portfolio Message: ${input.name}`,
+        text: `You received a new message!\n\nName: ${input.name}\nEmail: ${input.email}\nMessage: ${input.message}`
+      };
+
+      await transporter.sendMail(mailOptions);
 
       res.status(201).json(message);
     } catch (err) {
@@ -38,8 +45,7 @@ export async function registerRoutes(
           field: err.errors[0].path.join('.'),
         });
       }
-      // If the email fails but database works, we still want to know
-      console.error("Email Error:", err);
+      console.error("Server Error:", err);
       res.status(500).json({ message: "Failed to send message" });
     }
   });
