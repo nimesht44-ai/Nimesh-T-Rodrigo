@@ -67,7 +67,7 @@ export default function Home() {
                 </span>
                 Open to work
               </div>
-              <h2 className="text-primary font-bold tracking-widest text-sm uppercase">WIX DEVELOPER</h2>
+              <h2 className="text-primary font-bold tracking-widest text-sm uppercase"></h2>
             </div>
             
             <h1 className="text-5xl md:text-7xl font-bold font-display text-white mb-6 leading-tight">
@@ -94,7 +94,7 @@ export default function Home() {
               </a>
               <div className="flex items-center gap-3 text-sm text-gray-300 group bg-white/5 px-4 py-2 rounded-full border border-white/10">
                 <MapPin className="w-4 h-4 text-primary" />
-                Mahiyangana, Srilanka
+                Srilanka
               </div>
             </div>
 
